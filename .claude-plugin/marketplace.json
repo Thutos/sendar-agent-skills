@@ -1,0 +1,13 @@
+{
+  "name": "sendar",
+  "owner": {
+    "name": "Sendar"
+  },
+  "plugins": [
+    {
+      "name": "sendar",
+      "source": "./",
+      "description": "Add application email with Sendar, inspect delivery and connect your account through MCP."
+    }
+  ]
+}

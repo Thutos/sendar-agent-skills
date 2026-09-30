@@ -1,0 +1,20 @@
+{
+  "name": "sendar",
+  "version": "1.0.0",
+  "description": "Add application email with Sendar, inspect delivery and connect your account through MCP.",
+  "author": {
+    "name": "Sendar",
+    "url": "https://sendar.app"
+  },
+  "homepage": "https://sendar.app/ai",
+  "repository": "https://github.com/Thutos/sendar-agent-skills",
+  "license": "MIT",
+  "keywords": [
+    "email",
+    "transactional-email",
+    "mcp",
+    "sendar"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json"
+}

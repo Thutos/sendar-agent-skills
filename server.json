@@ -1,0 +1,16 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.Thutos/sendar",
+  "description": "Sendar application email: inspect setup, preview, send and check delivery.",
+  "repository": {
+    "url": "https://github.com/Thutos/sendar-agent-skills",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://sendar.app/api/mcp"
+    }
+  ]
+}

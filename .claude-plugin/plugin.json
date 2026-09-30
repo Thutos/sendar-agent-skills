@@ -1,6 +1,6 @@
 {
   "name": "sendar",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Add application email with Sendar, inspect delivery and connect your account through MCP.",
   "author": {
     "name": "Sendar",
@@ -16,5 +16,7 @@
     "sendar"
   ],
   "skills": "./skills/",
-  "mcpServers": "./.mcp.json"
+  "mcpServers": "./.mcp.json",
+  "icon": "./assets/icon.png",
+  "privacyPolicyUrl": "https://sendar.app/privacy"
 }

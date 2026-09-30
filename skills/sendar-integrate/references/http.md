@@ -1,5 +1,7 @@
 # Server-side HTTP integration
 
+This is code to add to the user’s application, not a command for the agent to run with credentials from the installer’s machine. Never inspect local secret files or read an existing API key to execute this example. MCP authenticates separately through OAuth. The application owner supplies their own Sendar key in their server’s secret store.
+
 No SDK is required. In Node.js 20+ (including a Next.js server route):
 
 ```js

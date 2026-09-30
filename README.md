@@ -63,3 +63,17 @@ For Lovable, Replit, Bolt and v0, use https://sendar.app/ai and the server-side 
 See https://sendar.app/ai for instructions and releases. Protocol/authentication tests are automated against a disposable database. Individual client sign-in and curated marketplace approval must be verified separately. Report integration issues through GitHub Issues without credentials, private recipients or message bodies.
 
 Privacy: https://sendar.app/privacy · Terms: https://sendar.app/terms
+
+## Public agent reference
+
+- [Versioned public REST contract](https://sendar.app/openapi/v1.json)
+- [Compact documentation index](https://sendar.app/llms.txt)
+- [Capabilities and shared pricing](https://sendar.app/agent-capabilities.json)
+- [Markdown integration reference](https://sendar.app/docs/agent-reference.md)
+- [Five runnable recipes, mocked by default](https://sendar.app/downloads/sendar-recipes.mjs)
+
+The public contract covers core email operations; it does not expose dashboard/admin APIs.
+REST API keys retain their existing permissions. MCP OAuth connections are read-only
+by default; optional sending requires a bounded grant. A successful mock or preview
+is not a live-delivery test. Documentation files assist integrations, not guaranteed
+search rankings or marketplace approval.

@@ -1,0 +1,38 @@
+{
+  "name": "sendar",
+  "version": "1.0.0",
+  "description": "Add application email with Sendar, inspect delivery and connect your account through MCP.",
+  "author": {
+    "name": "Sendar",
+    "url": "https://sendar.app"
+  },
+  "homepage": "https://sendar.app/ai",
+  "repository": "https://github.com/Thutos/sendar-agent-skills",
+  "license": "MIT",
+  "keywords": [
+    "email",
+    "transactional-email",
+    "mcp",
+    "sendar"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Sendar",
+    "shortDescription": "Application email for your AI coding workflow.",
+    "longDescription": "Add application email with Sendar, inspect delivery and connect your account through MCP.",
+    "developerName": "Sendar",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://sendar.app/ai",
+    "privacyPolicyURL": "https://sendar.app/privacy",
+    "termsOfServiceURL": "https://sendar.app/terms",
+    "defaultPrompt": [
+      "Add welcome emails to my application with Sendar.",
+      "Check my Sendar domain setup before sending a test."
+    ]
+  }
+}

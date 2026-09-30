@@ -10,6 +10,26 @@ npx skills add Thutos/sendar-agent-skills
 
 Choose the agents and skills in the installer. Skills can write integration code without an account connection. Review files before installing third-party skills.
 
+## Replit
+
+Import `https://github.com/Thutos/sendar-agent-skills` through **+ → Use a skill → GitHub import**, preview and select the three skills. Or run in the project shell:
+
+```sh
+npx skills add Thutos/sendar-agent-skills --agent replit
+```
+
+Files live in `.agents/skills`. Keep `SENDAR_API_KEY` in Replit Secrets and server-side code. Installing skills is separate from connecting an account or authorizing a send. [Replit setup](https://sendar.app/ai/replit?utm_source=replit&utm_medium=skill&utm_campaign=agent-distribution).
+
+## Windsurf / Devin Desktop
+
+```sh
+npx skills add Thutos/sendar-agent-skills --agent windsurf
+```
+
+The installer uses `.agents/skills` with links under `.windsurf/skills`. Current Devin Desktop also discovers `.agents/skills`; `.devin/skills` is its preferred manual-install location. In Cascade, invoke `@sendar-integrate`, `@sendar-delivery`, or `@sendar-migrate`. [Windsurf setup](https://sendar.app/ai/windsurf?utm_source=windsurf&utm_medium=skill&utm_campaign=agent-distribution).
+
+Both CLI installation layouts were tested in an isolated project on 30 September 2026, including supporting reference files. These are installation checks, not claims of end-to-end execution in Replit/Cascade or partner-directory approval.
+
 ## Connect MCP
 
 Remote endpoint: **https://sendar.app/api/mcp** (Streamable HTTP).

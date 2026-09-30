@@ -1,0 +1,8 @@
+{
+  "servers": {
+    "sendar": {
+      "type": "http",
+      "url": "https://sendar.app/api/mcp"
+    }
+  }
+}

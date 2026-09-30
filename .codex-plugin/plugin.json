@@ -1,6 +1,6 @@
 {
   "name": "sendar",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Add application email with Sendar, inspect delivery and connect your account through MCP.",
   "author": {
     "name": "Sendar",
@@ -19,10 +19,10 @@
   "mcpServers": "./.mcp.json",
   "interface": {
     "displayName": "Sendar",
-    "shortDescription": "Application email for your AI coding workflow.",
+    "shortDescription": "Email tools for developers",
     "longDescription": "Add application email with Sendar, inspect delivery and connect your account through MCP.",
     "developerName": "Sendar",
-    "category": "Productivity",
+    "category": "Developer Tools",
     "capabilities": [
       "Read",
       "Write"
@@ -33,6 +33,9 @@
     "defaultPrompt": [
       "Add welcome emails to my application with Sendar.",
       "Check my Sendar domain setup before sending a test."
-    ]
+    ],
+    "supportURL": "https://sendar.app/contact",
+    "logo": "./assets/icon.png",
+    "composerIcon": "./assets/icon.png"
   }
 }

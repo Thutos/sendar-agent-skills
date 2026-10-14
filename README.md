@@ -1,4 +1,4 @@
-# Sendar for AI agents
+# Sendar — Email for AI Agents
 
 Portable skills and plugin manifests for integrating application email with Sendar.
 

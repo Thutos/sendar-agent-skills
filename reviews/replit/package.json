@@ -1,0 +1,15 @@
+{
+  "name": "sendar-replit-review",
+  "version": "0.1.7",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node verify.mjs",
+    "review": "node review.mjs",
+    "preview": "node preview.mjs",
+    "test:preview": "node --test preview.test.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

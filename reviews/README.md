@@ -27,3 +27,14 @@ Primary sources checked 2026-11-16:
 - https://github.com/vercel-labs/skills/blob/main/docs/agents.md
 
 No change to approved Claude 1.0.1 or other root packages. No purchases, new terms, grants, customer-data access, live sends or deployments.
+
+## Reproducible Linux review
+
+The branch-scoped `Experimental Replit mock review` workflow verifies every
+original 0.1.7 packet file against `reviews/replit-0.1.7.sha256` before executing
+mock transport checks, real loopback Preview HTTP tests, the standalone skill
+verifier and report generation on a standard public-repository Ubuntu runner.
+No credentials, dependencies, cache, uploaded artifacts, deployments or scheduled
+triggers are configured. The root approved release and original ZIP are unchanged.
+This is GitHub-hosted mock evidence, **not Replit host acceptance** or an official
+Replit submission. Existing owner prerequisites still apply.

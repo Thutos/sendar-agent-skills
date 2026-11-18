@@ -38,3 +38,20 @@ No credentials, dependencies, cache, uploaded artifacts, deployments or schedule
 triggers are configured. The root approved release and original ZIP are unchanged.
 This is GitHub-hosted mock evidence, **not Replit host acceptance** or an official
 Replit submission. Existing owner prerequisites still apply.
+
+## Frozen import handoff (18 November 2026)
+
+The exact original [0.1.7 ZIP](sendar-replit-review-0.1.7.zip) is now included
+in this review branch. Use the GitHub file page's Download raw file control;
+do not import the repository root or replace an existing project blindly.
+Before any host action, resolve the existing Replit access/no-charge gate and
+check the original partner receipt. No duplicate partner application.
+
+For a local checkout, `python3 reviews/verify-replit-archive.py` verifies the
+pinned archive SHA256 and all 13 archive files against the reviewed packet,
+without extracting or executing the ZIP. CI performs the same check before
+mock tests. This bridge is Sendar-owned artifact distribution, not Replit
+review submission, host evidence, approval or availability in the audited picker.
+The original packet and version are unchanged. Historical statements inside
+REVIEW.md about local-only availability describe its original preparation date;
+this addendum supersedes only that distribution detail.

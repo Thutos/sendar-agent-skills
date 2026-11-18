@@ -5,6 +5,8 @@ on:
     paths:
       - 'reviews/replit/**'
       - 'reviews/replit-0.1.7.sha256'
+      - 'reviews/sendar-replit-review-0.1.7.zip'
+      - 'reviews/verify-replit-archive.py'
       - '.github/workflows/replit-review.yml'
 permissions:
   contents: read
@@ -19,6 +21,8 @@ jobs:
           persist-credentials: false
       - name: Verify exact existing packet bytes
         run: sha256sum --check reviews/replit-0.1.7.sha256
+      - name: Verify downloadable frozen archive
+        run: python3 reviews/verify-replit-archive.py
       - name: Mock transport and Preview HTTP tests
         working-directory: reviews/replit
         run: |

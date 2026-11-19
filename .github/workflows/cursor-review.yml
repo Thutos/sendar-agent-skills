@@ -1,0 +1,17 @@
+name: Cursor frozen candidate mock review
+on:
+  push:
+    branches: [cursor-review-1.1.2-preview.1]
+  pull_request:
+    paths: ['reviews/cursor-1.1.2-preview.1/**', '.github/workflows/cursor-review.yml']
+permissions:
+  contents: read
+jobs:
+  mock-review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - name: Verify exact pre-existing archive and source
+        run: python3 reviews/cursor-1.1.2-preview.1/verify_archive.py
+      - name: Injected transport only - no live email
+        run: node reviews/cursor-1.1.2-preview.1/package/examples/verify.mjs

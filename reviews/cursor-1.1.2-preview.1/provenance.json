@@ -1,0 +1,9 @@
+{
+  "version": "1.1.2-preview.1",
+  "base": "integrations/cursor-sendar-review",
+  "change": "Source-verified preview does not issue an idempotency key; explicitly choose stable key only for authorized send.",
+  "corrected_skill_source": "integrations/codex-sendar-review-1.1.2-preview.1/package/skills/sendar-setup/SKILL.md",
+  "experimental": true,
+  "submitted": false,
+  "host_test": null
+}

@@ -7,6 +7,7 @@ on:
       - 'reviews/replit-0.1.7.sha256'
       - 'reviews/sendar-replit-review-0.1.7.zip'
       - 'reviews/verify-replit-archive.py'
+      - 'reviews/evidence-tools/**'
       - '.github/workflows/replit-review.yml'
 permissions:
   contents: read
@@ -23,6 +24,8 @@ jobs:
         run: sha256sum --check reviews/replit-0.1.7.sha256
       - name: Verify downloadable frozen archive
         run: python3 reviews/verify-replit-archive.py
+      - name: Reject unsafe review archive metadata
+        run: python3 -B -m unittest discover -s reviews/evidence-tools -v
       - name: Mock transport and Preview HTTP tests
         working-directory: reviews/replit
         run: |

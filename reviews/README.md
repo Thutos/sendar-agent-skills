@@ -55,3 +55,7 @@ review submission, host evidence, approval or availability in the audited picker
 The original packet and version are unchanged. Historical statements inside
 REVIEW.md about local-only availability describe its original preparation date;
 this addendum supersedes only that distribution detail.
+
+## Offline evidence verifier 0.1.7 (20 November 2026)
+
+`evidence-tools/verify_report.py ARCHIVE REPORT` checks report integrity only. Archive expansion is bounded before metadata reads; encrypted and symlink entries are rejected. CI tests frozen-byte acceptance and oversized/symlink rejection. This tool never attests host execution. Original host packet 0.1.7 and all released packages remain unchanged.

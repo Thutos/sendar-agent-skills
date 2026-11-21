@@ -1,0 +1,27 @@
+{
+  "package": "sendar-replit-review",
+  "version": "0.1.7",
+  "checked_at": "2026-11-05T07:03:26.429Z",
+  "runtime": {
+    "node": "v25.6.1",
+    "platform": "darwin",
+    "arch": "arm64"
+  },
+  "result": "pass",
+  "test_output": "PASS: five mock recipes; zero mock network calls; missing credentials rejected; idempotency header preserved; no implicit retry. Transport fully mocked; no email sent.\nPASS: timeout, non-JSON failure and unreadable success each make one request, retain retry guidance and do not expose raw diagnostic content.\nPASS: seven non-boolean live flags rejected before transport; explicit true and default false remain tested.\nPASS: all five CLI previews ignore inherited live flags, credentials and recipient/link overrides; forbidden fetch never invoked.\n",
+  "sha256": {
+    "package.json": "9a12d13cdf4d9d8feeae3cb74abd18ab4771d3d7f98089fb4aaea3437874260f",
+    ".replit": "8085406ff68f6c77deb5a2552664e710cea23203d71915ee9f8dc0b336b4b63e",
+    "recipes.mjs": "f722cb3614cf32e9ca93c21417d92c68853a2656d1ce3770c3c130c09ca4a455",
+    "verify.mjs": "189153990fe82e963de0f946e09d2998b8d1bee9a51ad6e92e96ab577abdbf8f",
+    "review.mjs": "e188ccb0798fb296ba9dc8f16a6c977ece290639178c42c55dc4a0035f005661",
+    "preview.mjs": "22e8a6b4088fac35592ef8b07469d0b41c89b94c47b421cdd29d418c13b3702d",
+    "preview.test.mjs": "01f4017869653db30b78708b444b112f33411cdbac29de9a99b5436a652f2b74",
+    "README.txt": "c397084594c49a20101f9b6684d34f7d7723558a37738f0661f384307ced204b",
+    "REVIEW.md": "7656c57f80dcd05746b0a6bebd4a2c15f27b83c3f5ea47fe04e23d63c52dbae6",
+    ".agents/skills/sendar-email-review/SKILL.md": "be19c62e16bde1348d20fa83ab531c250a4145d0081f9dd5f920fdc13c7c19b6",
+    ".agents/skills/sendar-email-review/scripts/recipes.mjs": "d3ce7ddc68d15ff4a40d9c5eb705a605dcd2488b7193f46633282ca76d9c01ff",
+    ".agents/skills/sendar-email-review/scripts/verify.mjs": "72202036690cac3ba2519cc254e86d11e16b58f7df4136ef858f3d57a59940b3"
+  },
+  "scope": "Mock transport only. Host identity requires independently retained Replit console output and project URL. No OAuth, live sending, partner acceptance or public listing proven."
+}

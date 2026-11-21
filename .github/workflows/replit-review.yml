@@ -1,0 +1,39 @@
+name: Experimental Replit mock review
+on:
+  push:
+    branches: [replit-review-0.1.7]
+    paths:
+      - 'reviews/replit/**'
+      - 'reviews/replit-0.1.7.sha256'
+      - 'reviews/sendar-replit-review-0.1.7.zip'
+      - 'reviews/verify-replit-archive.py'
+      - 'reviews/evidence-tools/**'
+      - '.github/workflows/replit-review.yml'
+permissions:
+  contents: read
+jobs:
+  mock-review:
+    if: github.event.repository.private == false
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - name: Verify exact existing packet bytes
+        run: sha256sum --check reviews/replit-0.1.7.sha256
+      - name: Verify downloadable frozen archive
+        run: python3 reviews/verify-replit-archive.py
+      - name: Reject unsafe review archive metadata
+        run: python3 -B -m unittest discover -s reviews/evidence-tools -v
+      - name: Mock transport and Preview HTTP tests
+        working-directory: reviews/replit
+        run: |
+          node --version
+          node verify.mjs
+          node --test preview.test.mjs
+          node .agents/skills/sendar-email-review/scripts/verify.mjs
+          node review.mjs
+      - name: State evidence boundary
+        run: |
+          echo 'GitHub Ubuntu mock checks only; NOT Replit host execution, Agent discovery, partner submission, approval or listing.' >> "$GITHUB_STEP_SUMMARY"

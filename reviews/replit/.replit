@@ -1,0 +1,6 @@
+entrypoint = "preview.mjs"
+run = ["node", "preview.mjs"]
+
+[[ports]]
+localPort = 3000
+externalPort = 80
